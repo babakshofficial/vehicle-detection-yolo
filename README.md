@@ -10,10 +10,7 @@ This repository contains code and Jupyter notebooks for detecting vehicles (cars
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Dataset](#dataset)
-- [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -59,8 +56,12 @@ Dependencies:
 git clone https://github.com/babakshofficial/vehicle-detection-yolo.git
 cd vehicle-detection-yolo
 
-# (Optional) create a virtual environment
+# (Optional) create and activate a virtual environment
 python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## 🚀 Usage
@@ -71,15 +72,18 @@ python3 -m venv venv
 4. Run the notebook to train or test vehicle detection  
 5. Visualize bounding box outputs  
 
-### Command Line Example (video detection)
-```bash
-python detect.py \
-  --source path/to/video.mp4 \
-  --weights path/to/yolo_weights.pth \
-  --output path/to/output_video.mp4
-```
-```python
-source venv/bin/activate
-# Install dependencies
-pip install -r requirements.txt
-```
+## 🤝 Contributing
+### Contributions are welcome!
+You can help by:
+- Fixing bugs or typos
+- Improving training scripts
+- Adding support for new vehicle categories
+- Optimizing performance (YOLO-Tiny, quantization, pruning)
+- Enhancing documentation
+
+Please open a pull request with your changes.
+
+## 📬 Contact
+### Maintainer: **babakshofficial**
+- GitHub: https://github.com/babakshofficial
+- Email: babakshofficial@gmail.com
