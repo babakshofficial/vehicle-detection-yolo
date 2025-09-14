@@ -61,7 +61,25 @@ cd vehicle-detection-yolo
 
 # (Optional) create a virtual environment
 python3 -m venv venv
-source venv/bin/activate
+```
 
+## 🚀 Usage
+### Run Notebook
+1. Open the Jupyter Notebook (e.g. `vehicle-detection-yolo11.ipynb`)  
+2. Prepare your dataset (images/videos with annotations)  
+3. Update config parameters (paths, weights, thresholds)  
+4. Run the notebook to train or test vehicle detection  
+5. Visualize bounding box outputs  
+
+### Command Line Example (video detection)
+```bash
+python detect.py \
+  --source path/to/video.mp4 \
+  --weights path/to/yolo_weights.pth \
+  --output path/to/output_video.mp4
+```
+```python
+source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
+```
